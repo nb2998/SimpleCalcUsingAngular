@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+
+<div align="center">
+  <input [(ngModel)]="num1" type="number" placeholder="Enter 1st number"/>
+  <input [(ngModel)]="num2" type="number" placeholder="Enter 2nd number"/>
+  
+</div><br><br>
+<div align="center">
+  <button class="btn btn-info" (click)="add()">+</button>
+  <button class="btn btn-danger" (click)="sub()">-</button>
+  <button class="btn btn-info" (click)="mul()">X</button>
+  <button class="btn btn-danger" (click)="divide()">/</button>
+</div>
+<h2 align="center">Result = {{res}}</h2>
